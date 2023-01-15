@@ -1,0 +1,121 @@
+
+
+/* ...............
+   Header style 
+................. */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;
+    margin:0px 80px 80px 0px ;
+
+}
+.nav-bar{
+
+    padding: 30px;
+    
+}
+.header-body{
+    text-align: center;
+    /* margin:0px 80px 80px 0px ; */
+
+}
+.header-img{
+    width: 1440px;
+    height: 700px;
+    margin:0px 80px 80px 80px ;
+    text-align: center;
+
+}
+
+/* ...........
+body style  
+.............*/
+
+.img-4-body{
+    display: flex;
+    align-items: center;
+    /* padding:0px 80px 80px 0px ; */
+}
+.img-4{
+    size: 142px 142px;
+    column-count: 2;
+    column-gap:none;
+    padding: 0px;
+
+}
+/* main body style  */
+.main-body{
+    display: flex;
+    justify-content: space-between;
+}
+.main-body-img{
+    height: 782px;
+    width: 508px;
+    
+}
+.main-body-text{
+    font-size: 800;
+    width:50%;
+    margin-left:80px;
+    margin-right: 80px;
+    
+}
+.year10{
+    display: center;
+    color: rgb(232, 225, 225);
+    background-color: chocolate;
+    margin-left: 45%;
+    margin-right: 50%;
+    /* border-radius: 5px solid red; */
+    size: 50px;
+
+} 
+/* box-4 style  */
+.Some-facts{
+    margin-top: 120px;
+}
+.box-4{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    border: 3px solid red;
+    
+}
+.box:hover{
+    background-color: blue;
+}
+.Sponspors{
+   
+    text-align: center;
+}
+.sponsors{
+    color: darkgray;
+    justify-content: space-between;
+    padding: 30px;
+}
+/* footer style  */
+.footer{
+    padding: 30px 160px 160px 30px;
+    color: beige;
+    height: 150px;
+    background-color: black;
+    text-align: center;
+    pa
+}
+.copyrigt{
+    padding-top: 0px;
+    height: 50px;
+    background-color: bisque;
+}
+
+/* responsive  */
+@media screen  {
+    
+}
