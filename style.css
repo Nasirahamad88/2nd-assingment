@@ -3,6 +3,9 @@
 /* ...............
    Header style 
 ................. */
+button{
+    background-color: coral;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -21,10 +24,10 @@
     /* margin:0px 80px 80px 0px ; */
 
 }
-.header-img{
-    width: 1440px;
+.banner{
+    width:100%;
     height: 700px;
-    margin:0px 80px 80px 80px ;
+   
     text-align: center;
 
 }
@@ -39,16 +42,20 @@ body style
     /* padding:0px 80px 80px 0px ; */
 }
 .img-4{
-    size: 142px 142px;
-    column-count: 2;
-    column-gap:none;
-    padding: 0px;
+    /* display:grid; */
+    grid-template-columns: repeat(2);
+    column-gap: 5px;
+   
 
 }
 /* main body style  */
+.main-body::after{
+    clear: both;
+}
 .main-body{
     display: flex;
     justify-content: space-between;
+    
 }
 .main-body-img{
     height: 782px;
@@ -97,7 +104,7 @@ body style
 }
 .sponsors{
     color: darkgray;
-    justify-content: space-between;
+    grid-template-columns: repeat(4);
     padding: 30px;
 }
 /* footer style  */
@@ -110,9 +117,91 @@ body style
     
  }
 .copyrigt{
+    text-align: center;
     padding-top: 0px;
     height: 50px;
     background-color: bisque;
 }
 
 /* responsive  */
+@media screen and (max-width:576px) {
+    *{
+        margin: 0px;
+        padding-top: 15px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        /* align-items:center; */
+        position: relative;
+    }
+
+    .nav-bar{
+        text-decoration: none;
+        display: grid;
+        padding: 10px;
+        
+    }
+    .banner{
+        margin: 0px;
+        height: 100%;
+        width:100%;
+        }
+    .img-4{
+        height:100%;
+        width: 275px;
+    } 
+    
+     .img-4-body{
+        display:grid;
+        align-items: center;
+        /* padding:0px 80px 80px 0px ; */
+    }
+    .main-body{
+        display: grid;
+        justify-content: space-between;
+    }
+    .main-body-img{
+        margin-right: 0px;
+        height:auto;
+        width:275px;
+    }
+    .year10{
+        display: center;
+        color: rgb(232, 225, 225);
+        background-color: chocolate;
+        size: 50px;
+    
+    } 
+    .Some-facts{
+        text-align: center;
+    }
+    
+    .box-4{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 100px;
+       
+    }
+    .main-body-text{
+       
+        margin-left:10px;
+        
+        
+    }
+    .footer{
+        
+        color: beige;
+        height: 150px;
+        background-color: black;
+        
+        
+     }
+     .copyrigt{
+        font-size: 9px;
+        text-align: center;
+        padding-top: 0px;
+        height: 50px;
+        background-color: bisque;
+    }
+}
